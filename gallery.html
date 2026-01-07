@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Fallen Outdoors — Team Alaska Gallery" />
+  <title>TFO Team Alaska — Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+</head>
+<body class="watermark-black">
+<div id="header-placeholder"></div>
+
+<section class="page-section">
+  <div class="container">
+
+    <h1>Top 10 Photos from 2025</h1>
+<p class="lead">
+  A look back at some of our most meaningful moments from TFO Team Alaska in 2025.
+</p>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item"><img src="images/gallery/picture1.jpg" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/picture2.jpg" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/picture3.jpg" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/picture4.jpg" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/picture5.jpg" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/picture6.jpg" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/picture7.jpg" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/picture8.jpg" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/picture9.jpg" loading="lazy"></div>
+      <div class="gallery-item"><img src="images/gallery/picture10.jpg" loading="lazy"></div>
+
+    </div>
+
+<p class="small-note">
+  These images represent just a small sample of the trips, events, and Veterans we were honored to support in 2025.
+</p>
+
+  </div>
+</section>
+
+<script>
+  fetch("header.html")
+    .then(r => r.text())
+    .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+</script>
+
+<main class="container">
+<section class="page-hero">
+  <div class="kicker">Gallery</div>
+  <h1>Moments from Team Alaska</h1>
+  <p class="muted">
+    Our trips are about connection, confidence, and community—here are some snapshots from the field.
+  </p>
+</section>
+
+<section class="section">
+  <div class="card"><div class="pad">
+    <h2>Facebook feed</h2>
+    <p class="muted">
+      Recent updates and photos are often shared here first.
+    </p>
+    <div class="embed">
+      <iframe
+        title="The Fallen Outdoors Team Alaska Banquet Facebook Page"
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FTFOAlaska&tabs=timeline&width=500&height=680&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false"
+        width="500"
+        height="680"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen="true"
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+    </div>
+    <p class="small muted" style="margin-top:10px;">
+      Note: Embedded feeds depend on Facebook availability/settings.
+    </p>
+  </div></div>
+</section>
+</main>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(r => r.text())
+      .then(html => { document.getElementById("footer-placeholder").innerHTML = html; })
+      .catch(() => { /* footer failed to load */ });
+  </script>
+
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+<script async src="https://www.instagram.com/embed.js"></script>
+</body>
+
+</html>

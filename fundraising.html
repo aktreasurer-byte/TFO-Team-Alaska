@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Fallen Outdoors — Team Alaska" />
+  <title>TFO Team Alaska — Fundraising</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+</head>
+<body class="watermark-black">
+<div id="header-placeholder"></div>
+<script>
+  fetch("header.html")
+    .then(r => r.text())
+    .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+</script>
+
+
+<main class="container">
+<section class="page-hero">
+  <div class="kicker">Fundraising</div>
+  <h1>Raffles & ways to support Team Alaska</h1>
+  <p class="muted">
+    Fundraisers help keep trips no‑cost for participants and allow us to run safe, well‑coordinated outdoor experiences across Alaska.
+  </p>
+  <div class="btn-row">
+    <a class="btn accent" href="donate.html">Donate</a>
+    <a class="btn" href="https://www.facebook.com/TFOAlaska" target="_blank" rel="noopener">Fundraiser updates on Facebook</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="split">
+    <div class="card"><div class="pad">
+      <h2>Current & upcoming raffles</h2>
+      <p>
+        We run multiple raffles throughout the year. Details, rules, and deadlines are posted on our Facebook pages.
+      </p>
+      <ul class="check">
+        <li><strong>Governor’s Tags (2)</strong> — coming soon (raffle details will be announced).</li>
+        <li><strong>Additional raffles</strong> — gear, trips, and sponsor-donated items as available.</li>
+        <li><strong>Banquet raffles & auctions</strong> — included as part of our annual banquet fundraiser.</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn accent" href="banquet.html">Banquet Fundraiser</a>
+        <a class="btn" href="https://www.facebook.com/TFOAlaska" target="_blank" rel="noopener">Team Alaska FB</a>
+      </div>
+    </div></div>
+
+    <div class="card"><div class="pad">
+      <h2>Why this matters</h2>
+      <p>
+        Alaska takes extra coordination—distance, weather, and access all add complexity. Fundraising directly supports:
+      </p>
+      <ul class="check">
+        <li><strong>Trip logistics & safety</strong> (planning, coordination, and support).</li>
+        <li><strong>Gear & supplies</strong> so participants can show up and participate.</li>
+        <li><strong>Outreach</strong> to reach Veterans, Service Members, and Gold Star families statewide.</li>
+        <li><strong>Keeping trips no‑cost</strong> for those we serve.</li>
+      </ul>
+      <p class="small muted" style="margin-top:10px;">
+        Interested in sponsoring an item or donating services? Email <a href="mailto:ak.events@thefallenoutdoors.org">ak.events@thefallenoutdoors.org</a>.
+      </p>
+    </div></div>
+  </div>
+</section>
+</main>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(r => r.text())
+      .then(html => { document.getElementById("footer-placeholder").innerHTML = html; })
+      .catch(() => { /* footer failed to load */ });
+  </script>
+
+</body>
+</html>

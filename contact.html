@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Fallen Outdoors — Team Alaska" />
+  <title>TFO Team Alaska — Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+</head>
+<body class="watermark-patriotic">
+<div id="header-placeholder"></div>
+<script>
+  fetch("header.html")
+    .then(r => r.text())
+    .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+</script>
+
+
+
+<main>
+  <section class="section hero compact">
+    <div class="container">
+      <h1>Connect with TFO</h1>
+      <p>Follow the links below for national updates, trip postings, and Team Alaska information.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cards three">
+        <div class="card"><div class="pad">
+          <h3>National Organization</h3>
+          <p class="small muted">News, mission updates, and national information.</p>
+          <p class="small"><a class="btn" href="https://www.facebook.com/thefallenoutdoors" target="_blank" rel="noopener">Visit Facebook</a></p>
+        </div></div>
+
+        <div class="card"><div class="pad">
+          <h3>West Coast Page</h3>
+          <p class="small muted">All trips are posted here. Follow the instructions on each trip post to enter.</p>
+          <p class="small"><a class="btn" href="https://www.facebook.com/groups/1089041847842037" target="_blank" rel="noopener">View Group</a></p>
+        </div></div>
+
+        <div class="card"><div class="pad">
+          <h3>Team Alaska</h3>
+          <p class="small muted">Local updates, banquet information, and Alaska announcements.</p>
+          <p class="small"><a class="btn" href="https://www.facebook.com/TFOAlaska" target="_blank" rel="noopener">Visit Facebook</a></p>
+        </div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(r => r.text())
+      .then(html => { document.getElementById("footer-placeholder").innerHTML = html; })
+      .catch(() => { /* footer failed to load */ });
+  </script>
+
+</body>
+</html>

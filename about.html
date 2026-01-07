@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Fallen Outdoors — Team Alaska" />
+  <title>TFO Team Alaska — About</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+</head>
+<body class="watermark-black">
+<div id="header-placeholder"></div>
+<script>
+  fetch("header.html")
+    .then(r => r.text())
+    .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+</script>
+
+
+<main class="container">
+<section class="page-hero">
+  <div class="kicker">About</div>
+  <h1>The Fallen Outdoors — Team Alaska</h1>
+  <p class="muted">
+    The Fallen Outdoors (TFO) is an all‑volunteer 501(c)(3) dedicated to connecting Veterans, Service Members, and Gold Star families
+    through therapeutic outdoor adventures.
+  </p>
+</section>
+
+<section class="section">
+  <div class="split">
+    <div class="card"><div class="pad">
+      <h2>Our purpose</h2>
+      <p>
+        We use the outdoors to build camaraderie, reduce isolation, and help people reconnect—one trip at a time.
+        Whether it’s a first fishing trip, a new hunting mentor, or simply time around a campfire, we focus on hope, connection, and healing.
+      </p>
+      <ul class="check">
+        <li><strong>Who we serve:</strong> Veterans, Active‑Duty Service Members, and Gold Star families.</li>
+        <li><strong>What we do:</strong> No-cost outdoor adventures (hunting, fishing, hiking, camping, and more).</li>
+        <li><strong>Why it matters:</strong> Community and purpose are protective factors—especially after service.</li>
+      </ul>
+    </div></div>
+
+    <div class="card"><div class="pad">
+      <h2>Our story</h2>
+      <p class="muted" style="margin-top:-6px;">
+        National founded <strong>2009</strong> • Team Alaska launched <strong>2019</strong>
+      </p>
+      <p>
+        TFO began in 2009, founded by deployed soldiers who saw how powerful the outdoors can be for connection and recovery.
+        Team Alaska started in 2019 to bring that same mission to the unique conditions and opportunities found here at home.
+      </p>
+      <div class="btn-row">
+        <a class="btn accent" href="upcoming.html">Join a Trip</a>
+        <a class="btn" href="donate.html">Donate</a>
+      </div>
+    </div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card"><div class="pad">
+    <h2>What makes Alaska different</h2>
+    <p>
+      Alaska is bigger, wilder, and more remote—so planning, safety, and logistics matter. It also offers unmatched opportunities
+      for fishing and hunting that build confidence and lifelong skills.
+    </p>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Terrain & distance</h3>
+        <p class="muted">Remote access, changing weather, and huge travel distances require strong coordination and experienced volunteers.</p>
+      </div>
+      <div class="feature">
+        <h3>Fishing opportunities</h3>
+        <p class="muted">From rivers to saltwater, fishing is one of our most accessible ways to get people outside and connected quickly.</p>
+      </div>
+      <div class="feature">
+        <h3>Hunting mentorship</h3>
+        <p class="muted">Hunting in Alaska can be life-changing—skill-building, challenging, and deeply rewarding when done safely and ethically.</p>
+      </div>
+      <div class="feature">
+        <h3>Year-round community</h3>
+        <p class="muted">We stay connected across seasons, using the outdoors as a consistent anchor for camaraderie.</p>
+      </div>
+    </div>
+  </div></div>
+</section>
+</main>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(r => r.text())
+      .then(html => { document.getElementById("footer-placeholder").innerHTML = html; })
+      .catch(() => { /* footer failed to load */ });
+  </script>
+
+</body>
+</html>

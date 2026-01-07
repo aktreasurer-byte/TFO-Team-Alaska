@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Fallen Outdoors — Team Alaska" />
+  <title>TFO Team Alaska — Upcoming Events</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+</head>
+<body class="watermark-patriotic">
+<div id="header-placeholder"></div>
+<script>
+  fetch("header.html")
+    .then(r => r.text())
+    .then(html => { document.getElementById("header-placeholder").innerHTML = html; });
+</script>
+
+
+<main class="container">
+<section class="page-hero">
+  <div class="kicker">Upcoming Trips</div>
+  <h1>How our trips work</h1>
+  <p class="muted">
+    Trip opportunities are posted on the <strong>TFO West Coast</strong> Facebook page. Each trip post includes entry instructions and deadlines.
+  </p>
+  <div class="btn-row">
+    <a class="btn accent" href="https://www.facebook.com/groups/1089041847842037/" target="_blank" rel="noopener">TFO West Coast FB</a>
+    <a class="btn" href="https://www.facebook.com/TFOAlaska" target="_blank" rel="noopener">Banquet FB Page</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="card"><div class="pad">
+    <ol class="steps">
+      <li><strong>Watch for a trip post</strong> on the TFO West Coast Facebook page.</li>
+      <li><strong>Follow the instructions on that post</strong> if you’re interested in the trip.</li>
+      <li><strong>Winners will be drawn</strong> and notified.</li>
+      <li><strong>Participants are added to a group chat</strong> for trip details, meet-up info, and gear guidance.</li>
+    </ol>
+    <p class="small muted" style="margin-top:10px;">
+      If you’re not selected for a specific trip, keep watching—new opportunities are posted throughout the year.
+    </p>
+  </div></div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Upcoming opportunities</h2>
+    <p class="muted">Dates and details can change—Facebook is the source of truth for current trip posts.</p>
+  </div>
+
+  <table class="table" aria-label="Upcoming opportunities">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Trip / Event</th>
+        <th>Location</th>
+        <th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Feb 28, 2026</td>
+        <td>7th Annual Banquet</td>
+        <td>Anchorage, AK</td>
+        <td><a href="banquet.html">Banquet page</a></td>
+      </tr>
+      <tr>
+        <td>TBD</td>
+        <td>Fishing / Hunting / Outdoor trips</td>
+        <td>Statewide</td>
+        <td><a href="https://www.facebook.com/groups/1089041847842037/" target="_blank" rel="noopener">See trip posts on Facebook</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+</main>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(r => r.text())
+      .then(html => { document.getElementById("footer-placeholder").innerHTML = html; })
+      .catch(() => { /* footer failed to load */ });
+  </script>
+
+</body>
+</html>
