@@ -678,4 +678,48 @@ h1{
   opacity: 0.85;
   text-align: center;
 }
+/* Pick.Click.Give footer card */
+.pcg-card {
+  border-radius: 14px;
+  background: #2e7d32; /* green */
+  transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
+}
+
+.pcg-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pcg-card:hover {
+  background: #1b5e20; /* darker green */
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.25);
+}
+
+.pcg-card:focus-within {
+  outline: 2px solid rgba(255,255,255,.7);
+  outline-offset: 2px;
+}
+
+.pcg-title {
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.pcg-sub {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,.9);
+}
+
+.pcg-badge {
+  width: 44px;
+  height: auto;
+}
+.pcg-card {
+  cursor: pointer;
+}
 
