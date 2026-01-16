@@ -35,6 +35,39 @@ header{
   display:flex; align-items:center; justify-content:space-between;
   gap:14px;
 }
+/* Fundraising raffles */
+.raffle-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.raffle-card {
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(0,0,0,.35);
+}
+
+.raffle-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.raffle-pricing {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 14px;
+  display: grid;
+  gap: 6px;
+}
+
+.raffle-pricing li {
+  font-weight: 700;
+}
+
 .brand{
   display:flex; align-items:center; gap:10px;
   text-decoration:none; font-weight:900;
