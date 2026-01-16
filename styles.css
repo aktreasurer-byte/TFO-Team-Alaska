@@ -722,4 +722,40 @@ h1{
 .pcg-card {
   cursor: pointer;
 }
+/* FORCE Pick.Click.Give to be green (footer) */
+.site-footer .pcg-card,
+.site-footer .pcg-card .pcg-link {
+  background-color: #2e7d32 !important;
+  border-color: #2e7d32 !important;
+}
+
+.site-footer .pcg-card .pcg-link {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 14px;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.site-footer .pcg-card:hover,
+.site-footer .pcg-card:hover .pcg-link {
+  background-color: #1b5e20 !important;
+}
+
+.site-footer .pcg-card:focus-within {
+  outline: 2px solid rgba(255,255,255,.7);
+  outline-offset: 2px;
+}
+
+.site-footer .pcg-title,
+.site-footer .pcg-sub {
+  color: #ffffff !important;
+}
+
+.site-footer .pcg-sub {
+  opacity: 0.9;
+}
+.site-footer .pcg-card, .site-footer .pcg-card .pcg-link { opacity: 1 !important; }
 
